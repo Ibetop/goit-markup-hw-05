@@ -614,7 +614,8 @@ margin-bottom: 16px;
     padding-right: 15px;
 }
 
-.images-item:hover .overflov .overflov-title {
+.images-item:hover .overflov .overflov-title,
+.overflov-focus:focus .overflov .overflov-title, .images-item {
  transform: translatey(0%);
 }
 
@@ -622,6 +623,13 @@ margin-bottom: 16px;
 /* .images-item:hover::before .overflov-title {
     opacity: 1;
 } */
+
+.overflov-focus {
+    text-decoration: none;
+   transition-property: transform;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .overflov {
   position: relative;
